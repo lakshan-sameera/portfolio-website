@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Porfolio Website</title>
+	<link rel = "stylesheet" href = "style.css">
+	<script src="https://kit.fontawesome.com/db4040f8ad.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<button id ="scrollbutton">
+		<i class="fa-solid fa-arrow-up"></i>
+	</button>
+	
+<div id = "header">
+	<div class = "container">
+		<nav>
+			<img src="Images/icon.png" class="logo">
+			<ul id = "sidemenu">
+				<li><a href="#header">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+			</ul>
+			<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+		</nav>
+		<div class = "header-text">
+			<p>UI/UX Designer</p>
+			<h1>Hello!, I'm <span>Lakshan</span><br>from Sri Lanka</h1>
+		</div>
+	</div>
+</div>
+
+
+
+<!-----about----->
+<div id="about">
+	<div class="container">
+		<div class ="row">
+			<div class = "about-col-1">
+				<img src="Images/user.png">
+			</div>
+			<div class = "about-col-2">
+				<h1 class="sub-title">About Me</h1><br>
+				<p>I am a multidisciplinary designer with a curious mind, I enjoy to meet new people and understand how
+					they are solving problems, this is one of the reasons why I invest my time on meetups from product
+					management to everything related to design (research, design thinking, design system, etc.) and talking 
+					to people in general, as always can be an opportunity to learn something new. I see it as a chance to 
+					improve myself as a professional and put things in practice when I’m creating my solutions.			
+					In all projects, I seek to simplify the relationship between people and the interactive products they use, 
+					taking into consideration business goals and technological constraints.
+					I am self-aware of the impact our solutions have on people's lives, and this is the reason why I always 
+					give my best to create a seamless and delightful experience.</p>
+
+					<div class = "tab-titles">
+						<p class="tab-links active-link" onclick="opentab('skill')">Skills</p>
+						<p class="tab-links" onclick="opentab('education')">Education</p>
+						<p class="tab-links" onclick="opentab('experience')">Experience</p>
+					</div>
+
+					<div class = "tab-contents active-tab" id = "skill">
+						<ul>
+							<li><span>UI/UX</span><br>Designing Web & App interfaces</li>
+							<li><span>Web Development</span><br>Designing Website and Application development</li>
+							<li><span>Application Development</span><br>Building android/IOS Applications</li>
+						</ul>
+					</div>	
+
+					<div class = "tab-contents" id = "education">
+						<ul>
+							<li><span>2022-Current</span><br>Batchelor of Science (hons) in Cyber Security at Sri Lanka Technology Campus</li>
+							<li><span>2022</span><br>Advanced Administrative in Linux at Winsys Network Academy</li>
+							<li><span>2020-2021</span><br>Diploma in Information Technology at Esoft</li>
+						</ul>
+					</div>	
+
+					<div class = "tab-contents" id ="experience">
+						<ul>
+							<li><span>2022</span><br>UI/UX Design Traning at ET Institute </li>
+							<li><span>2020-2022</span><br>Team lead at UX/UIapp LLC</li>
+							<li><span>2020</span><br>internship at CCSSI pvt LTD</li>
+						</ul>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!--------------------servicess------------------>
+<div id = "services">
+	<div class="container">
+		<h1 class="sub-title">My Services</h1>
+		<div class="services-list">
+			<div>
+				<i class="fa-solid fa-code"></i>
+				<h2>Web Design</h2><br>
+				<p> Our web design service provides you with a customized website design that's perfect for your
+					business or personal site. We are working with you to create a design that matches your brand,
+					while giving your customers a seamless user experience that will delight them.
+				</p>
+				<a href="https://www.interaction-design.org/literature/topics/web-design">Learn more</a>
+			</div>
+			<div>
+				<i class="fa-solid fa-file-code"></i>
+				<h2>UX/UI Design</h2><br>
+				<p>  UI UX designer is a professional who identifies new opportunities to create better user experiences. 
+					Aesthetically pleasing branding strategies help them effectively reach more customers.
+					They also ensure that the end-to-end journey with their products or services meets desired outcome
+				</p>
+				<a href="https://flatironschool.com/blog/what-is-ux-ui-design/">Learn more</a>
+			</div>
+			<div>
+				<i class="fa-solid fa-mobile-button"></i>
+				<h2>Application Design</h2><br>
+				<p> The application designer gathers requirements from business systems analysts and end users. 
+					The designer also determines which IT resources will be available to support the application.
+					The application designer then writes the design specifications for the application programmers to implement.
+				</p>
+				<a href="https://www.ibm.com/docs/en/zos-basic-skills?topic=zos-application-designers-programmers">Learn more</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!----------------porfolio-------------->
+
+<div id="portfolio">
+	<div class="container">
+		<h1 class = "sub-title">My Works</h1>
+		<div class="work-list">
+
+			<div class="work">
+				<img src="Images/work-1.png">
+				<div class="layer">
+					<h3>Social Media App</h3>
+					<p>The app connects you and talented people around the world. Download it from Play store or App Store now</p>
+					<a href="https://play.google.com/store/apps/details?id=com.facebook.katana&hl=en&gl=US"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+
+			<div class="work">
+				<img src="Images/work-3.png">
+				<div class="layer">
+					<h3>Online Shopping App</h3>
+					<p>Shop anything you want with greate discount from anyware around the world. Download it from Play store or App Store now</p>
+					<a href="
+					https://play.google.com/store/apps/details?id=com.alibaba.aliexpresshd&hl=en&gl=US"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+
+			<div class="work">
+				<img src="Images/work-2.png">
+				<div class="layer">
+					<h3>Music App</h3>
+					<p>Listen to the letest new music in any country for free(T & C apply). Download it from Play store or App Store now</p>
+					<a href="https://play.google.com/store/apps/details?id=com.spotify.music&hl=en&gl=US"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>	
+		</div>
+		<a href="https://www.apple.com/app-store/" class = "button"> See More</a>
+	</div>
+</div>
+
+
+<!--------------contact------------->
+<div id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="contact-left">
+				<h1 class="sub-title">Contact Me</h1>
+				<p><i class="fa-regular fa-at"></i>lakshansameera636@outlook.com</p>
+				<p><i class="fa-solid fa-square-phone"></i>0717481765</p>
+				<div class="social-icon">
+					<a href="https://www.facebook.com/laksameera"><i class="fa-brands fa-square-facebook"></i></a>
+					<a href="https://twitter.com/LakshanSameera_?t=5L1nwIKjwn5om3HmXVGv_g&s=09"><i class="fa-brands fa-square-twitter"></i></a>
+					<a href="https://www.linkedin.com/in/lakshan-sameera-9ba206221"><i class="fa-brands fa-linkedin"></i></a>
+					<a href="https://wa.me/qr/DOYEF4YP7RWXM1"><i class="fa-brands fa-square-whatsapp"></i></a>
+				</div>
+				<a href="Images/my-cv.pdf" download class="button button2">Download My CV</a>
+			</div>
+
+			<div class="contact-right">
+				<form name = "submit-to-google-sheet" >
+					<input type="text" name = "Name" placeholder="Your Name" required >
+					<input type="email" name = "Email" placeholder="Your Email" required>
+					<textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+					<button type = "submit" class = "button button2">Submit</button>
+				</form>
+				<span id ="msg"></span>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<p>Copyright ©  <span>Lakshan Sameera.</span></p>
+	</div>
+</div>
+
+<script>
+
+	var tablinks = document.getElementsByClassName("tab-links");
+	var tabcontents = document.getElementsByClassName("tab-contents");
+
+	function opentab(tabname)
+	{
+		for(tablink of tablinks)
+		{
+			tablink.classList.remove("active-link");
+		}
+		for(tabcontent of tabcontents)
+		{
+			tabcontent.classList.remove("active-tab");
+		}
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(tabname).classList.add("active-tab");
+	}
+
+</script>
+
+<script>
+
+	var sidemenu = document.getElementById("sidemenu");
+
+	function openmenu()
+	{
+		sidemenu.style.right="0";
+	}
+
+	function closemenu()
+	{
+		sidemenu.style.right="-200px";
+	}
+
+
+</script>
+
+<script>
+	const scrollbutton = document.querySelector("#scrollbutton");
+	scrollbutton.addEventListener("click",function()
+	{
+		window.scrollTo
+		({
+			top:0,
+			left:0,
+			behavior:"smooth"
+		});
+	});
+	
+</script>
+<script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbzKF6kRRGWFUNGoKotMVb8NpCzOgUUJSCxEjFoYyzl4XJetne2AaPF0KROEf9RWlwE/exec'
+	const form = document.forms['submit-to-google-sheet']
+	const msg = document.getElementById("msg")
+
+  
+	form.addEventListener('submit', e => {
+	  e.preventDefault()
+	  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+		.then(response => {msg.innerHTML = "Message has been sent Succesfuly!"
+		setTimeout(function(){
+			msg.innerHTML=""
+		},5000)
+		form.reset()
+	})
+		.catch(error => console.error('Error!', error.message))
+	})
+</script>
+
+</body>
+</html>
+ 
